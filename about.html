@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Info On The Run</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="navigating" class='sidenav'>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="download.html">Download</a>
+            <a href="howtouse.html">How To Use</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <script>/* Set the width of the side navigation to 250px */
+                function openNav() {
+                    document.getElementById("navigating").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                }
+                
+                function closeNav() {
+                    document.getElementById("navigating").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                }
+        </script>
+    <header id="header">
+        <h1>Illinois Institute of Technology</h1>
+        <h2>Info On the Run</h2>
+    </header>
+    <div class='main'>
+    <h3>What are beacons?</h3>
+	<p>A beacon is a device that has the ability to transmit a Bluetooth signal, which contains information that is interpreted by a cell phone or other compatible device. The cell phone takes this signal from the beacon and interprets it based on the programming.</p>
+	
+	<h3>How are beacons being used today?</h3>
+	<ul>
+		<li>Used in retail to notify patrons of deals and other information pertaining to the store.</li>
+		<li>Scavenger hunt-like game usually played in corporate settings.</li>
+		<li>Event-related notifications at sporting events, concerts, etc. </li>
+		<li>Used in airports to notify flyers of cancellations, gate changes, or emergencies.</li>
+	</ul>
+    </div>
+</body>
+</html>

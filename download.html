@@ -4,22 +4,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Info On The Run</title>
-	<link rel="stylesheet" type="text/css" href="css/ipro.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+	<div id="navigating" class='sidenav'>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="howtouse.html">How To Use</a>
+		<a href="About.html">Learn About Beacons</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	<script>/* Set the width of the side navigation to 250px */
+			function openNav() {
+				document.getElementById("navigating").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+				document.getElementById("navigating").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+			}
+	</script>
+	<div class='main'>
 	<header id="header">
 		<h1>Illinois Institute of Technology</h1>
 		<h2>Info On the Run</h2>
-		<nav id="navigating">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="howtouse.html">How To Use</a></li>
-			</ul>
-		</nav>
 	</header>
 	
 	<h3>Download Link</h3>
+	</div>
 </body>
 
 </html>

@@ -4,42 +4,51 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Info On The Run</title>
-	<link rel="stylesheet" type="text/css" href="css/ipro.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-	<header id="header">
-		<h1>Illinois Institute of Technology</h1>
-		<h2>Info On the Run</h2>
-		<nav id="navigating">
-			<ul>
-				<li><a href="howtouse.html">How To Use</a></li>
-				<li><a href="download.html">Download</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<h3>WELCOME!!!!</h3>
-	<p>Are you interested on what goes on at IIT campus? Do you have a smartphone with bluetooth capabilities? Then you came to the right place. So first off...</p>
-	
-	<h3>What are beacons?</h3>
-	<p>A beacon is a device that has the ability to transmit a Bluetooth signal, which contains information that is interpreted by a cell phone or other compatible device. The cell phone takes this signal from the beacon and interprets it based on the programming.</p>
-	
-	<h3>How are beacons being used today?</h3>
-	<ul>
-		<li>Used in retail to notify patrons of deals and other information pertaining to the store.</li>
-		<li>Scavenger hunt-like game usually played in corporate settings.</li>
-		<li>Event-related notifications at sporting events, concerts, etc. </li>
-		<li>Used in airports to notify flyers of cancellations, gate changes, or emergencies.</li>
-	</ul>
-	
-	<h3>What information will this app provide?</h3>
-	<ul>
-		<li>Upcoming events such as sport events or book sales.</li>
-		<li>Information about buildings on campus.</li>
-		<li>Security alerts for emergencies.</li>
-	</ul>
-	
+	<div id="navigating" class='sidenav'>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="download.html">Download</a>
+		<a href="howtouse.html">How To Use</a>
+		<a href="About.html">Learn About Beacons</a>
+	</div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	<script>/* Set the width of the side navigation to 250px */
+			function openNav() {
+				document.getElementById("navigating").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+			}
+			
+			function closeNav() {
+				document.getElementById("navigating").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+			}
+	</script>
+	<div id='main'>
+		<header id="header">
+			<h1>Illinois Institute of Technology</h1>
+			<h2>Info On the Run</h2>
+		</header>
+		
+		<h3>WELCOME!!!!</h3>
+		<p>Are you interested on what goes on at IIT campus?</p>
+		<p>Do you have a smartphone with bluetooth capabilities?</p> 
+		<p>Then you came to the right place.</p>
+		
+		<h3>What information will this app provide?</h3>
+		<ul>
+			<li>Upcoming events such as</li>
+				<ul>
+					<li>sports events</li>	
+					<li>Organization events</li>
+					<li>Book Sales</li>
+				</ul>
+			<li>Information about buildings on campus.</li>
+			<li>Security alerts for emergencies.</li>
+		</ul>
+	</div>
 </body>
 
 </html>
