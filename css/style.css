@@ -49,3 +49,11 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  font-size: 1.3em;
+}
