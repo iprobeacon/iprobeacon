@@ -4,7 +4,10 @@ body{
     background-repeat: no-repeat;
     background-position:center;
     color:white;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
+
+
 
 .sidenav {
     height: 100%;
@@ -24,8 +27,12 @@ body{
     text-decoration: none;
     font-size: 25px;
     color: #818181;
-    display: block;
     transition: 0.3s;
+    display: block;
+}
+
+.sidenav .active{
+  color:#f1f1f1;
 }
 
 .sidenav a:hover {
@@ -43,6 +50,7 @@ body{
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    font-weight:bold;
 }
 
 @media screen and (max-height: 450px) {
@@ -70,3 +78,40 @@ body {
 #bold {
   font-weight: bold;
 }
+
+#that{
+  font-size:20px;
+  position:relative;
+  top:-3px;
+  right:7px;
+}
+#this{
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  position:relative;
+  top:5px;
+  left:5px;
+  color:white;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+#this:hover{
+  
+  color:red;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+#iit{
+  padding-left: 1px;
+  color:red;
+  font-weight:bold;
+  font-size:110%;
+  letter-spacing:2px;
+}
+
+#commun{
+  color:white;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+

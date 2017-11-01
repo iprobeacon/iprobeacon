@@ -12,9 +12,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Home</a>
             <a href="download.html">Download</a>
-            <a href="howtouse.html">How To Use</a>
+            <a href="howtouse.html">Usage</a>
+            <a class='active' href="about.html">About</a>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <span id = 'this' style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <span id = 'that'>Menu</span></span>
         <script>/* Set the width of the side navigation to 250px */
                 function openNav() {
                     document.getElementById("navigating").style.width = "250px";
@@ -26,11 +27,11 @@
                     document.getElementById("main").style.marginLeft= "0";
                 }
         </script>
+    <div id='main'>
     <header id="header">
         <h1>Illinois Institute of Technology</h1>
-        <h2>Communiit</h2>
+        <h2 id = 'commun'>Commun<span id = 'iit'>IIT</span></h2>
     </header>
-    <div class='main'>
     <h3>What are beacons?</h3>
 	<p>A beacon is a device that has the ability to transmit a Bluetooth signal, which contains information that is interpreted by a cell phone or other compatible device. The cell phone takes this signal from the beacon and interprets it based on the programming.</p>
 	
