@@ -1,12 +1,12 @@
-body{
-    background:url('pics/eaglecopy.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position:center;
-    color:white;
-    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+.thisone img{
+  position: fixed;
+  z-index:-1;
+  height:100%;
+  width:100%;
+  top:0;
+  background-size:cover;
+  background-position:top;
 }
-
 
 
 .sidenav {
@@ -23,7 +23,7 @@ body{
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 24px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -42,20 +42,15 @@ body{
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 15px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 #main {
     transition: margin-left .5s;
     padding: 16px;
     font-weight:bold;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 
 h1, h2 {
@@ -68,6 +63,7 @@ h2 {
 
 body {
   font-family: 'Julius Sans One', sans-serif;
+  color: white;
 }
 
 .main {
